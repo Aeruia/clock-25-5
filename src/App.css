@@ -1,38 +1,65 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  font-size: 2.5rem;
 }
+
+.clock{
+  margin: 15px 0px 15px 0px;
+  border: 1px solid blue;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+
+.break, .session{
+  display: flex;
+  border: 1px solid green;
+  border-radius: 25px;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+.button{
+  font-size: 2rem;
+  cursor: pointer;
+  width: 40px;
+  background-color: lightgray;
+}
+
+.button:hover{
+  background-color: gray;
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#time-left{
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
